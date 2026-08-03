@@ -1,6 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:happy_tails/constants/app_colors.dart';
+import 'package:happy_tails/widgets/logo_section.dart';
 
 void main() {
+  runApp(const HappyTails());
+}
+
+class HappyTails extends StatelessWidget {
+  const HappyTails({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor:AppColors.surface,
+        body: SafeArea(
+          child: LogoSection(),
+        ),
+      ),
+    );
+  }
+}
+/**void main() {
   runApp(const MyApp());
 }
 
@@ -120,3 +142,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+**/

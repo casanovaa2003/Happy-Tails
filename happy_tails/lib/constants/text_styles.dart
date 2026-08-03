@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:happy_tails/constants/app_colors.dart';
 
 class TextStyles{
+  //happy tails
   static final appTitle = GoogleFonts.baloo2(
     fontSize: 34,
     fontWeight: FontWeight.w700,
