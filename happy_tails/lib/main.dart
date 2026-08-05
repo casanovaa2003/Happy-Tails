@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:happy_tails/constants/app_colors.dart';
-import 'package:happy_tails/widgets/logo_section.dart';
+import 'package:happy_tails/screens/login_screen.dart';
 
 void main() {
   runApp(const HappyTails());
@@ -13,12 +12,7 @@ class HappyTails extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor:AppColors.surface,
-        body: SafeArea(
-          child: LogoSection(),
-        ),
-      ),
+          home: LoginScreen(),
     );
   }
 }
